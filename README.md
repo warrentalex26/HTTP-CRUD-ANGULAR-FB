@@ -1,3 +1,7 @@
+# Notas Importantes
+
+Creamos la interfaz para decirnos a nosotros que datos son los que se deben manejar en regla
+
 # HTTPCRUDANGULARFB
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
