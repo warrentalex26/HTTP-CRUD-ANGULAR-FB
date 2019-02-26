@@ -1,7 +1,8 @@
 # Notas Importantes
 
-Creamos la interfaz para decirnos a nosotros que datos son los que se deben manejar en regla
-
+- Creamos la interfaz para decirnos a nosotros que datos son los que se deben manejar en regla
+- En el servicio no es necesario usar JSON.Stringify para angular 7
+https://stackoverflow.com/questions/53680951/angular-7-property-json-does-not-exist-on-type-object
 # HTTPCRUDANGULARFB
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
