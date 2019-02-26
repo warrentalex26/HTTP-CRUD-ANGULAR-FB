@@ -1,7 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'keys'
+  name: 'keys',
+  //Esta pendiente del ciclo de cambios que haga Angular
+  pure: false
 })
 export class KeysPipe implements PipeTransform {
   //ESTE PIPE TRANSFORMA UN OBJETO EN UN ARREGLO

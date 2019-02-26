@@ -14,10 +14,11 @@
       <table class="table table-bordered">
         <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Casa</th>
-          <th scope="col">Opciones</th>
+          <th scope="col" class="text-center">#</th>
+          <th scope="col" class="text-center">Nombre</th>
+          <th scope="col" class="text-center">Casa</th>
+          <th scope="col" class="text-center">Biografía</th>
+          <th scope="col" class="text-center">Acciones</th>
         </tr>
         </thead>
         <tbody>
@@ -26,6 +27,14 @@
           <td>{{heroes[k].nombre}}</td>
           <td>{{heroes[k].casa}}</td>
           <td>{{heroes[k].bio}}</td>
+          <td class="text-center">
+            <button [routerLink]="['/heroe', k]" type="button" class="btn btn-outline-success" style="margin-right: 10px;">
+              Editar
+            </button>
+            <button (click)="borrarHeroe(k)" type="button" class="btn btn-outline-danger">
+              Eliminar
+            </button>
+          </td>
         </tr>
         </tbody>
       </table>

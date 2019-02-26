@@ -31,4 +31,18 @@ export class HeroesComponent implements OnInit {
   ngOnInit() {
   }
 
+  borrarHeroe(key$:string){
+    this._heroesService.borrarHeroe(key$)
+      .subscribe(data => {
+        //Por si pasa un error
+        if (data) {
+        console.error(data);
+        }else {
+          //SALIO BIEN
+          //Eliminamos la posicion del arreglo, no lo hacemos con splice porque es objeto el que tiene.
+          delete this.heroes[key$];
+        }
+      });
+  }
+
 }
