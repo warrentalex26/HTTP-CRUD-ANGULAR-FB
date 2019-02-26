@@ -68,4 +68,11 @@ export class HeroesService {
       }))
   }
 
+  getTodosHeroes(){
+    return this.http.get(this.fireAPI_URL)
+      .pipe(map(res => {
+        return res;
+      }))
+  }
+
 }
