@@ -10,13 +10,14 @@ import {subscribeOn} from 'rxjs/operators';
 export class HeroesComponent implements OnInit {
 
   heroes: any[] = [];
+  loading: boolean = true;
 
   constructor(private _heroesService: HeroesService) {
     this._heroesService.getTodosHeroes()
       .subscribe(data =>{
         //Viene un objeto dentro de otro objeto por ende no se puede barrer con un for
-        console.log(data);
         this.heroes = data;
+        this.loading = false
 
 
         //convertimos el objeto en un arreglo
